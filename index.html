@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KakiChats Hub</title>
+    <title>Victor Tan | KakiChats</title>
     <style>
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -16,20 +16,20 @@
             padding: 20px;
             box-sizing: border-box;
         }
-        .container {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2.5rem;
+        .card {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
             text-align: center;
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
         }
         .avatar {
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
-            background: #2a5298;
+            background: #25D366;
             color: white;
             display: flex;
             align-items: center;
@@ -38,34 +38,66 @@
             font-weight: bold;
             margin: 0 auto 1rem;
         }
-        h1 { margin: 0 0 0.5rem; color: #1e3c72; }
-        p { color: #666; margin: 0 0 1.5rem; font-size: 0.95rem; }
-        .links { display: flex; flex-direction: column; gap: 12px; }
+        h1 {
+            margin: 0 0 6px;
+            color: #222;
+            font-size: 1.5rem;
+        }
+        p {
+            color: #666;
+            margin: 0 0 1.8rem;
+            font-size: 0.95rem;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
         .btn {
-            display: block;
-            padding: 12px;
-            background: #2a5298;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px;
             color: white;
             text-decoration: none;
-            border-radius: 10px;
-            font-weight: 500;
-            transition: transform 0.2s, background 0.2s;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.15s ease, opacity 0.15s ease;
         }
         .btn:hover {
-            background: #1e3c72;
             transform: translateY(-2px);
+            opacity: 0.92;
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+        .btn-email {
+            background-color: #6001d2; /* Yahoo purple */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="avatar">KC</div>
-        <h1>KakiChats</h1>
-        <p>Connect with me across all platforms</p>
+    <div class="card">
+        <div class="avatar">VT</div>
+        <h1>Victor Tan</h1>
+        <p>KakiChats Contact Card</p>
+
         <div class="links">
-            <a href="https://wa.me/" class="btn" target="_blank">Chat on WhatsApp</a>
-            <a href="https://instagram.com" class="btn" target="_blank">Follow on Instagram</a>
-            <a href="mailto:your-email@yahoo.com" class="btn">Send an Email</a>
+            <!-- WhatsApp Direct Link -->
+            <a href="https://wa.me/60195368000?text=Hi%20Victor,%20contacting%20you%20from%20KakiChats!" 
+               class="btn btn-whatsapp" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                Chat on WhatsApp
+            </a>
+
+            <!-- Yahoo Direct Email Link -->
+            <a href="mailto:kongwy_tan@yahoo.com?subject=Inquiry%20from%20KakiChats" 
+               class="btn btn-email">
+                Send Email
+            </a>
         </div>
     </div>
 </body>
