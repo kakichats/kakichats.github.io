@@ -3,31 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KakiChats</title>
+    <title>KakiChats Hub</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f0f2f5;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
+            justify-content: center;
             margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .box {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             text-align: center;
+            width: 100%;
+            max-width: 400px;
         }
-        h1 { color: #0969da; }
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #2a5298;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        h1 { margin: 0 0 0.5rem; color: #1e3c72; }
+        p { color: #666; margin: 0 0 1.5rem; font-size: 0.95rem; }
+        .links { display: flex; flex-direction: column; gap: 12px; }
+        .btn {
+            display: block;
+            padding: 12px;
+            background: #2a5298;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .btn:hover {
+            background: #1e3c72;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Welcome to KakiChats!</h1>
-        <p>Our website is officially live.</p>
+    <div class="container">
+        <div class="avatar">KC</div>
+        <h1>KakiChats</h1>
+        <p>Connect with me across all platforms</p>
+        <div class="links">
+            <a href="https://wa.me/" class="btn" target="_blank">Chat on WhatsApp</a>
+            <a href="https://instagram.com" class="btn" target="_blank">Follow on Instagram</a>
+            <a href="mailto:your-email@yahoo.com" class="btn">Send an Email</a>
+        </div>
     </div>
 </body>
 </html>
